@@ -1,0 +1,42 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/scripts/launch_hook.py\" --default-event observe",
+            "timeout": 30,
+            "statusMessage": "Checking AskTg inbox",
+            "additionalContextLimit": 2500
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/scripts/launch_hook.py\" --default-event observe",
+            "timeout": 30,
+            "statusMessage": "Checking AskTg inbox",
+            "additionalContextLimit": 2500
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/scripts/launch_hook.py\" --default-event stop",
+            "timeout": 35,
+            "statusMessage": "Checking for Telegram replies"
+          }
+        ]
+      }
+    ]
+  }
+}

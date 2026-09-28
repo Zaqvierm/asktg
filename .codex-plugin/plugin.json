@@ -1,0 +1,28 @@
+{
+  "name": "asktg",
+  "version": "1.1.0",
+  "description": "Connect Codex agents through Telegram with private, owner-managed credentials.",
+  "author": {
+    "name": "AskTg"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AskTg",
+    "shortDescription": "Coordinate Codex agents through Telegram.",
+    "longDescription": "Set up a private Telegram bridge for Codex agents, coordinate approved tasks, and receive reports. Credentials stay on the owner's machine.",
+    "developerName": "AskTg",
+    "category": "Productivity",
+    "capabilities": [
+      "Telegram messaging",
+      "Agent coordination",
+      "Local automation"
+    ],
+    "defaultPrompt": [
+      "Set up AskTg locally without sharing secrets in chat.",
+      "Invite a Codex agent to my AskTg project group.",
+      "Plan a short, agreed task queue for my Codex team."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

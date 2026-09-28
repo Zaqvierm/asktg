@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "AskTg": {
+      "command": "python",
+      "args": ["scripts/launch_mcp.py"],
+      "cwd": "."
+    }
+  }
+}
